@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import { Link } from "react-router-dom";
+
 import {
   Video1,
   Video2,
@@ -86,7 +88,17 @@ const PageVideo: React.FC = () => {
         <nav>
           <div className="first-div">
             <MdMenu onClick={() => setOpen(!open)} size={24} />
-            <img src={logo} />
+            <Link style={{ alignItems: "center", height: "100%" }} to="/">
+              <img
+                style={{
+                  marginTop: "0.5rem",
+                  width: "100px",
+                  marginLeft: "24px",
+                  height: "100%",
+                }}
+                src={logo}
+              />
+            </Link>
           </div>
           <div className="input">
             <div className="input-container">

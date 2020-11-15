@@ -45,11 +45,6 @@ export const ContainerHeader = styled.div`
         font-weight: bold;
         margin-left: 24px;
       }
-
-      & > img {
-        width: 100px;
-        margin-left: 24px;
-      }
     }
 
     div.input {
