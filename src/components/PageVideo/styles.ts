@@ -5,47 +5,11 @@ import { shade } from "polished";
 export const Container = styled.div`
   height: 100vh;
   width: 100%;
-  display: grid;
-  grid-template:
-    "header header" 56px
-    "asideMenu mainContent" 1fr
-    / auto 1fr;
-
-  font-family: "Roboto", sans-serif;
-
-  .header {
-    display: flex;
-    align-items: center;
-    color: #fff;
-    grid-area: header;
-    background: #ff0000;
-    height: 100%;
-    justify-content: center;
-  }
-
-  .asideMenu {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    grid-area: asideMenu;
-    background: #fff;
-    height: 100%;
-  }
-
-  .mainContent {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    grid-area: mainContent;
-    background: hsla(0, 0%, 97%, 0.8);
-    height: 100%;
-    padding: 0 5rem 0 5rem;
-  }
 
   justify-content: center;
   align-items: flex-start;
+
+  background: hsla(0, 0%, 97%, 0.8);
 `;
 
 export const ContainerHeader = styled.div`
@@ -155,6 +119,81 @@ export const ContainerHeader = styled.div`
         border-radius: 50%;
         margin-left: 0.5rem;
         height: 30px;
+      }
+    }
+  }
+`;
+
+export const ContainerVideo = styled.div`
+  width: 100%;
+  height: 100%;
+  margin-left: 6.5rem;
+  display: flex;
+  flex-direction: row;
+  margin-top: 56px;
+  padding-top: 2rem;
+
+  div.list {
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    > div {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 1rem;
+
+      > img {
+        width: 200px;
+      }
+
+      > div {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0.6rem;
+        > span {
+          max-width: 200px;
+          color: gray;
+        }
+
+        .title {
+          font-size: 16px;
+          font-weight: bold;
+          color: #000;
+        }
+      }
+    }
+  }
+
+  div.footer {
+    display: flex;
+    flex-direction: column;
+
+    > span.hash {
+      color: blue;
+      font-size: 16px;
+    }
+
+    span.title {
+      color: #000;
+      font-size: 16px;
+    }
+
+    span {
+      font-size: 14px;
+    }
+
+    div.last {
+      display: flex;
+      justify-content: space-between;
+
+      svg {
+        font-size: 18px;
+        margin-left: 0.5rem;
+      }
+
+      span {
+        font-size: 18px;
       }
     }
   }

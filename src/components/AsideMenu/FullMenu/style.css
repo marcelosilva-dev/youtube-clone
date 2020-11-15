@@ -1,5 +1,6 @@
 .MuiDrawer-paper {
-  top: 56px !important;
+  margin-top: 56px !important;
+  font-size: 14px !important;
 }
 
 .started {
@@ -12,4 +13,19 @@
 
 .icon {
   margin-left: 8px !important;
+}
+
+.avatar {
+  width: 30px;
+  background-color: #000;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+  height: 30px;
+}
+
+.footer {
+  font-size: 12px !important;
+  padding: 0 0 0.2rem 0.8rem !important;
+  font-weight: bold;
+  color: gray;
 }
