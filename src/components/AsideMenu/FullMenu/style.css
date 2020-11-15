@@ -1,0 +1,15 @@
+.MuiDrawer-paper {
+  top: 56px !important;
+}
+
+.started {
+  color: #ff0000 !important;
+}
+
+.selected {
+  background: #dcdcdc !important;
+}
+
+.icon {
+  margin-left: 8px !important;
+}
